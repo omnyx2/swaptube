@@ -5,7 +5,7 @@ This directory contains a Dockerfile to run SwapTube in a containerized environm
 ## TLDR Workflow
 
 ```bash
-docker build -f docker/Dockerfile -t swaptube:cuda ..
+docker build -f docker/Dockerfile -t swaptube:cuda .
 docker volume create swaptube-build
 docker run --rm -it --gpus all \
   -u $(id -u):$(id -g) \
